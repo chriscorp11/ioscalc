@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iOS Calculator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <style>
         *,
         *::after,
@@ -11,62 +15,52 @@
           padding: 0px;
           margin: 0px;
           font-family: inherit;
-          box-sizing: border-box;
         }
 
         body {
           background-color: #333333;
           display: flex;
-          flex-direction: column;
           align-items: center;
           justify-content: center;
           font-size: 16px;
-          color: white;
+          flex-direction: column;
         }
-
         body,
         html {
           height: 100vh;
           font-family: sans-serif;
         }
-
         button {
           cursor: pointer;
           border: 0px;
         }
-
         input[type="text"] {
           background-color: transparent;
           text-align: end;
           width: 100%;
           color: #d2d2d2;
           border: 0px;
-          font-size: 2.5rem;
+          font-size: 4rem;
         }
-
         #main {
           border: 2px solid #ededed;
           border-radius: 50px;
-          width: 90%;
-          max-width: 400px;
+          width: 100%;
+          max-width: 280px;
           background-color: #000000;
           padding: 2rem 1rem;
-          margin-bottom: 1rem;
         }
-
         .calc_header {
-          margin-top: 10px;
+          margin-top: 90px;
           padding: 12px;
         }
 
         .calc_footer > * + * {
           margin-top: 1rem;
         }
-
         .calc_footer > *:last-child {
           gap: 1rem;
         }
-
         .btn_group {
           display: flex;
           justify-content: space-between;
@@ -82,19 +76,16 @@
           width: 60px;
           height: 60px;
           color: #ffffff;
-          font-size: 1.5rem;
+          font-size: 20px;
           transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
         }
-
         .btn.btn-grow {
           flex-grow: 1;
           border-radius: 40px;
         }
-
         .btn:hover {
           transform: translate(-2px, -3px);
         }
-
         .btn.active {
           background-color: #ffffff;
           color: #f69906;
@@ -104,7 +95,6 @@
           background-color: #9f9f9f;
           color: #000;
         }
-
         .btn-grey:hover {
           background-color: #ededed;
         }
@@ -112,22 +102,14 @@
         .btn-dark-grey {
           background-color: #313131;
         }
-
         .btn-dark-grey:hover {
           background-color: #999999;
         }
-
         .btn-orange {
           background-color: #f69906;
         }
-
         .btn-orange:hover {
           background-color: orange;
-        }
-
-        footer {
-          font-size: 0.75rem;
-          text-align: center;
         }
     </style>
 </head>
@@ -176,8 +158,8 @@
             </footer>
         </form>
     </main>
-    <footer>
-        &copy; Chris Corp. All Rights Reserved 2024
+    <footer style="color: #d2d2d2; margin-top: 20px;">
+        &copy; Chris Corp 2024 All rights reserved
     </footer>
     <script>
         const output = document.getElementById("output");
@@ -248,3 +230,4 @@
     </script>
 </body>
 </html>
+``` &#8203;:citation[oaicite:0]{index=0}&#8203;
